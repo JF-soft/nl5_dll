@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<NL5>
+  <c>======================================</c>
+  <c> CAUTION: DO NOT MODIFY THIS FILE !!! </c>
+  <c>     ...if you don't know how...      </c>
+  <c>======================================</c>
+  <Version ver="3" rev="4" core="27" build="34" date="04/22/2022" ID="1065455790" />
+  <Doc>
+    <Cir mode="2">
+      <Cmps Key="73E2C9F75715F2B70072998E8DCF321C">
+        <Cmp type="C_C" id="4" name="C1" descr="" view="0" node0="0" node1="1" model="C" c="1" ic="" />
+        <Cmp type="L_L" id="3" name="L1" descr="" view="0" node0="1" node1="2" model="L" l="1" ic="" />
+        <Cmp type="R_R" id="2" name="R1" descr="" view="0" node0="2" node1="3" model="R" r="1" />
+        <Cmp type="V_V" id="1" name="V1" descr="" view="0" node0="0" node1="3" model="Step" v="10">
+          <Signal u0="0" u1="10" p="1" w="500e-3" cw="0" s="0" r="0" f="0" d="0" dec="0" ph="0" list="0" function="10" file="" trace="" c="0" type="0" f0="100" f1="10e+3" />
+        </Cmp>
+        <Cmp type="label" id="5" name="out" descr="" view="0" node0="1" model="Label" />
+      </Cmps>
+      <Sheets activeSheet="0">
+        <Sheet name="Sheet1">
+          <VC size="32" center_x="0" center_y="0" />
+          <Curs p="-3,-5" dir="-1" />
+          <Pcts>
+            <Pct type="label" id="5" p="5,-5" text0="16,-24" text1="16,24" textdir="0" />
+            <Pct type="cmp" id="2" p="-4,-5" dir="0" mir="0" text0="32,-20" text1="32,20" textdir="0" />
+            <Pct type="cmp" id="3" p="-1,-5" dir="0" mir="0" text0="32,-24" text1="32,16" textdir="0" />
+            <Pct type="cmp" id="1" p="-7,-4" dir="1" mir="0" text0="24,-40" text1="42,-40" textdir="0" />
+            <Pct type="cmp" id="4" p="3,-4" dir="1" mir="0" text0="24,-34" text1="40,-34" textdir="0" />
+            <Pct type="gnd" p="-7,-2" dir="1" />
+            <Pct type="gnd" p="3,-2" dir="1" />
+            <Pct type="dot" p="3,-5" />
+            <Pct type="wire" p0="-7,-5" p1="-4,-5" />
+            <Pct type="wire" p0="-7,-5" p1="-7,-4" />
+            <Pct type="wire" p0="-2,-5" p1="-1,-5" />
+            <Pct type="wire" p0="1,-5" p1="3,-5" />
+            <Pct type="wire" p0="3,-5" p1="5,-5" />
+            <Pct type="wire" p0="3,-5" p1="3,-4" />
+          </Pcts>
+        </Sheet>
+      </Sheets>
+      <Win visible="true" state="0" monitor="0" left="10" top="76" width="750" height="500" />
+      <ComponentsBar visible="true" size="64" />
+    </Cir>
+    <Tran labels="true" selection="false" digital_position="85" digital_autosize="false" advanced_format="false">
+      <Traces>
+        <Trace id="5" expr="V(out)" name="" color="0,255,0" sel="false" plot="true" window="0" table="true" storage="true" tools="0" type="V" mode="analog" dig_threshold="2.5" scale="10" mid="0" dig_style="0" bus_format="hex" bus_bits="0" bus_content="-1" bus_fp="0" bus_text="" shift="0" xy="false" width="1" scale_history="" simple_line="true" simple_dp="false" line="1" marker="0" marker_style="0" marker_size="0" />
+      </Traces>
+      <Settings start="0" screen="10" step="100e-3" pause_trigger="false" pause_trigger_f="" start_trigger="false" start_trigger_f="" />
+      <Window>
+        <Win visible="false" />
+        <Attributes numbers="true" names="true" annotations="false" vert_grid="true" vert_grid_fixed="false" hor_grid="true" cursors="false" interval="0" left="0" right="1" />
+        <Legend legend="true" x="950e-3" y="50e-3" />
+        <Scale start="0" screen="1" ys="1" ym="0" vert_mode="0" />
+        <Texts />
+      </Window>
+      <Storage storage="1" last="false" storage_shift="true" />
+      <Cursors left="0" right="10" active="false" locked="false" interval="false" screen="false" />
+      <Table table="false" separate="false" time_header="false" table_cursors="true">
+        <Items>
+          <Item name="left" en="true" cs="false" width="4" />
+          <Item name="right" en="true" cs="false" width="4" />
+          <Item name="delta" en="true" cs="false" width="4" />
+          <Item name="min" en="true" cs="false" width="4" />
+          <Item name="max" en="true" cs="false" width="4" />
+          <Item name="pp" en="true" cs="false" width="4" />
+          <Item name="mean" en="true" cs="false" width="4" />
+          <Item name="rms" en="true" cs="false" width="4" />
+          <Item name="acrms" en="true" cs="false" width="4" />
+          <Item name="freq" en="true" cs="false" width="4" />
+          <Item name="period" en="true" cs="false" width="4" />
+          <Item name="integral" en="true" cs="false" width="4" />
+        </Items>
+      </Table>
+      <Screen status_panels="7" table_height="120" />
+      <Math manual="false" />
+      <Log>Transient+log%0aStarted+%3a+10%2f21%2f2019+1%3a34%3a15+PM%0aFile+%3a+C%3a%5cnl5%5cdll_example%5clink_example.nl5%0aStopped+%3a+10%2f21%2f2019+1%3a34%3a15+PM%0a0+%3a+Init%0aComponents+%3d+5%0aNodes+%3d+3%0aRank+%3d+7</Log>
+      <AnalogWindows Maximized="false">
+        <AnalogWindow separated="false" />
+      </AnalogWindows>
+      <TableWindow>
+        <Win visible="false" />
+      </TableWindow>
+      <Preview Position="40" Left="0" Right="0" />
+    </Tran>
+    <Freq phase="2" phase_ratio="600e-3">
+      <Traces>
+        <Trace id="5" expr="V(out)" name="" color="0,255,0" sel="false" plot="true" window="0" table="true" storage="true" tools="0" type="V" phase_width="1" ac_out="mag_phase" width="1" scale_history="" simple_line="true" simple_dp="false" line="1" marker="0" marker_style="0" marker_size="0" />
+      </Traces>
+      <Settings type="0" list="" test="" from="10e-3" to="10" points="100" scale="0" id="1" alg="0" dcop="true" faf="0.1" fhl="true" fmr="10" fsh="false" fpop="true" />
+      <Window>
+        <Win visible="true" state="0" monitor="0" left="17" top="109" width="2243" height="1031" />
+        <Attributes numbers="true" names="true" annotations="false" vert_grid="true" vert_grid_fixed="false" hor_grid="true" cursors="false" interval="0" left="100" right="10e+3" />
+        <Legend legend="true" x="950e-3" y="50e-3" />
+        <Scale pht="180" phb="-180" top="1.1543321361" bot="25.3302962316e-9" left="10e-3" right="10" vlog="true" db="true" hlog="true" />
+        <Texts />
+      </Window>
+      <Storage storage="1" last="false" storage_shift="true" />
+      <Cursors left="100" right="10e+3" active="true" locked="false" interval="false" screen="false" />
+      <Table table="false" separate="false" time_header="false" table_cursors="true">
+        <Items>
+          <Item name="left" en="true" cs="false" width="4" />
+          <Item name="right" en="true" cs="false" width="4" />
+          <Item name="delta" en="true" cs="false" width="4" />
+          <Item name="min" en="true" cs="false" width="4" />
+          <Item name="max" en="true" cs="false" width="4" />
+          <Item name="pp" en="true" cs="false" width="4" />
+          <Item name="slope" en="true" cs="false" width="4" />
+        </Items>
+      </Table>
+      <Screen status_panels="5" table_height="120" />
+      <Math manual="false" />
+      <Log>AC+log%0aStarted+%3a+4%2f22%2f2022+2%3a47%3a27+PM%0aFile+%3a+C%3a%5cProjects%5cnl5%5cnl5_dll%5cMATLAB%5cdll_example.nl5</Log>
+      <TableWindow>
+        <Win visible="false" />
+      </TableWindow>
+    </Freq>
+    <Advanced dc="true" so="true" cs="false" sbs="false" to="0" zero="10e-12" s_m="1" s_fs="500e-3" s_ff="1" s_os="125e-3" s_of="250e-3" s_as="15.625e-3" s_af="125e-3" s_cs="125e-3" s_cf="250e-3" low="0" high="5" thr="2.5" z0re="50" z0im="0" zparam="" st_delete="false" st_max="false" st_nmax_val="10" st_save="false" st_t="false" st_t_val="1" st_trigger="false" st_trigger_f="" />
+    <Libraries />
+    <Properties title="No+title" revision="1.0" author="Unknown" project="Unknown" organization="Unknown" comments="" created="5%2f14%2f2009+10%3a49%3a39+AM" modified="4%2f22%2f2022+2%3a47%3a23+PM" save="0" />
+    <CS type="1" x="0" active="true">
+      <Win visible="false" />
+      <Attributes numbers="true" names="true" annotations="false" vert_grid="true" vert_grid_fixed="false" hor_grid="true" cursors="false" interval="2" left="0" right="1" />
+      <Legend legend="true" x="950e-3" y="50e-3" />
+      <Scale top="1" bot="0" />
+      <Texts />
+    </CS>
+    <XY>
+      <Win visible="false" />
+      <Attributes numbers="true" names="true" annotations="false" vert_grid="true" vert_grid_fixed="false" hor_grid="true" cursors="false" interval="2" left="0" right="1" />
+      <Legend legend="true" x="950e-3" y="50e-3" />
+      <Scale xs="1" xm="0" ys="1" ym="0" />
+      <Texts />
+    </XY>
+    <FFT pow="8" win="0" type="1" zp="0" trace_id="-1" copy="0" tran="0" phase="2" phase_ratio="600e-3">
+      <Win visible="false" />
+      <Attributes numbers="true" names="true" annotations="false" vert_grid="true" vert_grid_fixed="false" hor_grid="true" cursors="false" interval="2" left="0" right="1" />
+      <Legend legend="true" x="950e-3" y="50e-3" />
+      <Scale top="100" bot="100e-6" left="1" right="1e+6" vlog="true" db="true" hlog="true" pht="180" phb="-180" />
+      <Texts />
+    </FFT>
+    <AH bins="100" from="-1" to="1" interp="false">
+      <Win visible="false" />
+      <Attributes numbers="true" names="true" annotations="false" vert_grid="true" vert_grid_fixed="false" hor_grid="true" cursors="false" interval="2" left="0" right="1" />
+      <Legend legend="true" x="950e-3" y="50e-3" />
+      <Scale left="-1" right="1" top="1" bot="0" />
+      <Texts />
+    </AH>
+    <DC name="" from="0" to="1" points="100">
+      <Win visible="false" />
+      <Attributes numbers="true" names="true" annotations="false" vert_grid="true" vert_grid_fixed="false" hor_grid="true" cursors="false" interval="2" left="0" right="1" />
+      <Legend legend="true" x="950e-3" y="50e-3" />
+      <Scale left="0" right="1" ys="1" ym="0" />
+      <Texts />
+    </DC>
+    <ED>
+      <Win visible="false" />
+      <Attributes numbers="true" names="true" annotations="false" vert_grid="true" vert_grid_fixed="false" hor_grid="true" cursors="false" interval="2" left="0" right="1" />
+      <Legend legend="true" x="950e-3" y="50e-3" />
+      <Scale ys="1" ym="0" start="0" screen="1" />
+      <Texts />
+    </ED>
+    <Power nh="11">
+      <Win visible="false" />
+    </Power>
+    <FCS type="1" x="0" active="true">
+      <Win visible="false" />
+      <Attributes numbers="true" names="true" annotations="false" vert_grid="true" vert_grid_fixed="false" hor_grid="true" cursors="false" interval="2" left="0" right="1" />
+      <Legend legend="true" x="950e-3" y="50e-3" />
+      <Scale top="100" bot="100e-6" vlog="true" db="true" />
+      <Texts />
+    </FCS>
+    <Smith status="63" vswr="2%2c3%2c5" z0="50" center="false" zonly="false" show_vswr="false" re_vswr="0" im_vswr="0" grid="0">
+      <Win visible="false" />
+      <Attributes numbers="true" names="true" annotations="false" vert_grid="true" vert_grid_fixed="false" hor_grid="true" cursors="false" interval="2" left="0" right="1" />
+      <Legend legend="true" x="950e-3" y="50e-3" />
+      <Scale s="1.5" xm="0" ym="0" />
+      <Texts />
+    </Smith>
+    <Nyquist>
+      <Win visible="false" />
+      <Attributes numbers="true" names="true" annotations="false" vert_grid="true" vert_grid_fixed="false" hor_grid="true" cursors="false" interval="2" left="0" right="1" />
+      <Legend legend="true" x="950e-3" y="50e-3" />
+      <Scale s="1.5" xm="0" ym="0" />
+      <Texts />
+    </Nyquist>
+    <Sweep name="" from="1.0" to="1.0" step="0.0" type="0" list="" />
+    <Optimization n="4" tran="true" ac="false" run="true">
+      <r0 n="" v="" s="" />
+      <r1 n="" v="" s="" />
+      <r2 n="" v="" s="" />
+      <r3 n="" v="" s="" />
+    </Optimization>
+    <Sheet>
+      <Pcts>
+        <Pct type="pict" pict="3" txt="New NL5 file format not supported">
+          <Font Color="0,255,255" />
+        </Pct>
+      </Pcts>
+    </Sheet>
+  </Doc>
+</NL5>
