@@ -273,7 +273,7 @@ class NL5_dll:
             raise NL5OpenException('Circuit file not opened or not valid. Try to use open() function first!')
         return
 
-    def get_text(self, name:str) -> str:
+    def get_text(self, name:str, buf_size:int=256) -> str:
         '''! Returns text (parameter value in text format) of component parameter into character string text
 
         Returns text (parameter value in text format) of component parameter into character string text.
@@ -284,9 +284,8 @@ class NL5_dll:
         @returns component parameter as text
         '''
         if self._ncir >= 0:
-            N = 256
-            c_buf = ct.create_string_buffer(N)
-            retval = self.NL5_GetText(self._ncir, name.encode('utf-8'), c_buf, N)
+            c_buf = ct.create_string_buffer(buf_size)
+            retval = self.NL5_GetText(self._ncir, name.encode('utf-8'), c_buf, buf_size)
             if retval < 0:
                 raise NL5ValueException(f'Parameter {name} not found or parameter type not supported.')
         else:
@@ -362,7 +361,7 @@ class NL5_dll:
             raise NL5OpenException('Circuit file not opened or not valid. Try to use open() function first!')
         return
 
-    def get_parameter_text(self, name:str) -> str:
+    def get_parameter_text(self, name:str, buf_size:int=256) -> str:
         '''! Get parameter text
 
         Copies text (parameter value in text format) of component parameter with handle npar into character
@@ -376,9 +375,8 @@ class NL5_dll:
         if self._ncir >= 0:
             npar = self.NL5_GetParam(self._ncir, name.encode('utf-8'))
             if npar >= 0:
-                N = 256
-                c_buf = ct.create_string_buffer(N)
-                retval = self.NL5_GetParamText(self._ncir, npar, c_buf, N)
+                c_buf = ct.create_string_buffer(buf_size)
+                retval = self.NL5_GetParamText(self._ncir, npar, c_buf, buf_size)
                 if retval < 0:
                     raise NL5ValueException(f'Parameter {name} not found or parameter type not supported.')
             else:
