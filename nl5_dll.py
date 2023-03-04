@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-NL5 dll class definition to be able to run multiple dll instances
+NL5 dll class definition
 '''
 # standard library imports
 import os
