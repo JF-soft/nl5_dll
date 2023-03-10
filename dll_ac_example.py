@@ -1,12 +1,22 @@
 # -*- coding: utf-8 -*-
 
 # import required modules
+import os
+import platform
 import numpy as np
 import matplotlib.pyplot as plt
 from nl5_dll import NL5_dll
 
+
+if 'linux' in platform.system().lower():
+    home = os.environ['HOME']
+    nl5_dll_path = os.path.join(home, '.wine/drive_c/Program Files/nl5_dll/')
+else:
+    homedrive = os.environ['HOMEDRIVE']
+    nl5_dll_path = os.path.join(homedrive,'/NL5/nl5_dll')
+
 # create NL5 instance
-nl5 = NL5_dll(path='C:/NL5/nl5_dll')
+nl5 = NL5_dll(path=nl5_dll_path)
 
 if nl5.get_license():
     print(f'Using license: {nl5.get_error()}')
